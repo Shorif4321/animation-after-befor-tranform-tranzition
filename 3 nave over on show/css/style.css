@@ -1,0 +1,45 @@
+.menu ul {
+	padding: 0px;
+}
+
+.menu ul li {
+	float: left;
+	list-style-type: none;
+	background: black;
+	color: white;
+	width: 200px;
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	transition: .5s;
+
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+.menu ul li ul {
+	display: none;
+}
+
+.menu ul li:hover>ul {
+	display: block;
+}
+
+.menu ul li:hover {
+	background: red;
+}
+
+.menu ul li ul li {
+	position: relative;
+}
+
+.menu ul li ul li ul {
+	position: absolute;
+	top: 0px;
+	left: 200px;
+
+}

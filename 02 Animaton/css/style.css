@@ -1,0 +1,403 @@
+body {
+	background-color: #b3a0a04a;
+	margin: 0;
+	padding: 0;
+}
+
+/* ========= nav bar section ========== */
+.manu {}
+
+.manu li {}
+
+.manu li a {
+	font-size: 20px;
+	display: block;
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+	padding: 0 10px;
+	position: relative;
+	border-radius: 5px;
+	padding: 5px 20px;
+}
+
+.manu li:last-child a::after {
+	height: 0;
+	width: 0;
+}
+
+.manu li a::after {
+	content: "";
+	height: 14px;
+	width: 14px;
+	position: absolute;
+	background: #3a050585;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -7px;
+	border-radius: 50%;
+	transition: all 0.6s linear;
+}
+
+.manu li a::before {
+	content: "";
+	width: 0;
+	height: 4px;
+	background: #2466f9d6;
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.6s linear;
+}
+
+.manu li a:hover::before {
+	width: 90%;
+}
+
+.manu li a:hover {
+	background-color: #ce9792;
+}
+
+/* ========= nav bar section end ========== */
+
+/* ========= hover effect one ========== */
+.hov-effect-01 img {
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.hov-effect-01 {
+	position: relative;
+}
+
+.hov-effect-01 h2 {
+	position: absolute;
+	bottom: 30%;
+	left: 0%;
+	transform: translate(0, 30%);
+	text-align: center;
+	transition: all 0.4s linear;
+	opacity: 0;
+}
+
+
+.hov-effect-01:hover h2 {
+	bottom: 50%;
+	transform: translate(0, 50%);
+	opacity: 1;
+	color: #1ed21bcf;
+}
+
+/* ========= hover effect end ========== */
+
+
+
+h5 {
+	font-size: 25px
+}
+
+h2 {
+	font-size: 30px;
+	width: 100%;
+	color: #333;
+}
+
+/* ========= hover effect two ========== */
+.hov-effect-02 p {
+	font-size: 23px;
+	padding: 21px;
+}
+
+.hov-effect-02 img {
+	height: 100px;
+	width: 100px;
+	object-fit: cover;
+	border-radius: 50px;
+	margin: auto;
+	margin-top: -50px;
+	transition: all 0.5s linear;
+}
+
+.hov-effect-02:hover img {
+	transform: scale(1.6);
+}
+
+.hov-effect-02:hover {
+	transform: skewY(10deg);
+	transition: all 0.5s linear;
+}
+
+/* ========= hover effect two end ========== */
+
+
+/* ========= hover effect three  ========== */
+.hov-effect-03 p {
+	font-size: 20px;
+	padding: 5px;
+}
+
+.hov-effect-03 img {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	border-radius: 100px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.hov-effect-03 {
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.hov-effect-03:hover img {
+	transform: scale(1.8);
+	transition: all 0.4s ease;
+}
+
+/* ========= hover effect three end ========== */
+
+
+
+/* ========= hover effect four ========== */
+.hov-effect-04 img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.hov-effect-04 {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #0000008a;
+	top: 0;
+	left: 0;
+	transition: all 0.6s linear;
+	opacity: 0;
+	transform: scale(0.4);
+}
+
+.hov-effect-04:hover .overlay {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.hov-effect-04 h2 {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	transform: translate(0, -30%);
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
+	opacity: 0;
+}
+
+.hov-effect-04:hover h2 {
+	transition: all 0.5s ease-in-out;
+	top: 50%;
+	transform: translate(0, -50%);
+	opacity: 1;
+}
+
+/* ========= hover effect four end ========== */
+
+
+
+
+
+
+
+.hero {
+	height: 100vh;
+	width: 100%;
+	background-image: url(../images/sky.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.highway {
+	height: 200px;
+	width: 500%;
+	display: block;
+	background-image: url(../images/road.jpg);
+	position: absolute;
+	background-repeat: repeat-x;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	animation: highway 5s linear infinite;
+}
+
+@keyframes highway {
+	100% {
+		transform: translateX(-2400px);
+	}
+}
+
+.city {
+	height: 250px;
+	width: 500%;
+	background-image: url(../images/city.png);
+	position: absolute;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: city 20s linear infinite;
+}
+
+@keyframes city {
+	100% {
+		transform: translateX(-1400px);
+	}
+}
+
+.car {
+	width: 400px;
+	position: absolute;
+	bottom: 110px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+
+
+}
+
+.car img {
+	width: 100%;
+	animation: car 1s linear infinite;
+}
+
+@keyframes car {
+	100% {
+		transform: translateY(-1px);
+	}
+
+	50% {
+		transform: translateY(1px);
+	}
+
+	0% {
+		transform: translateY(-1px);
+	}
+}
+
+.cycle00 {
+	width: 200px;
+	position: absolute;
+	bottom: 50px;
+	left: 10%;
+	transform: translateX(-10%);
+	z-index: 1;
+}
+
+.cycle00 img {
+	width: 100px;
+}
+
+.cycle01 {
+	width: 200px;
+	position: absolute;
+	bottom: 155px;
+	left: 15%;
+	transform: translateX(-15%);
+	z-index: 1;
+}
+
+.cycle01 img {
+	width: 120px;
+}
+
+.cycle02 {
+	width: 150px;
+	position: absolute;
+	bottom: 50px;
+	right: 15%;
+	transform: translateX(15%);
+	z-index: 1;
+}
+
+.cycle02 img {
+	width: 150px;
+}
+
+.in {
+	background-color: #000;
+	color: #fff;
+}
+
+.text-effect {
+	background-image: url(../i/02.jpg);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.text-effect h2 {
+	font-size: 260px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.text-effect {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%)translateY(-50%);
+	-ms-transform: translateX(-50%)translateY(-50%);
+	transform: translateX(-50%)translateY(-50%);
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: top;
+	white-space: nowrap;
+	animation: texteff 15s linear infinite;
+}
+
+@keyframes texteff {
+	0% {
+		background-position: left 0px top 10px;
+	}
+
+	50% {
+		background-position: left 1000px top 10px;
+	}
+}
+
+.text {
+	margin-top: 17%;
+	text-align: center;
+}
+
+.text h3 {
+	font-size: 140px;
+	color: rgba(225, 225, 225, .1);
+	background-image: url(../images/05.jpg);
+	background-repeat: repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite;
+	font-weight: bold;
+}
+
+@keyframes animate {
+	0% {
+		background-position: left 0px top 10px;
+	}
+
+	40% {
+		background-position: left 800px top 10px;
+	}
+}

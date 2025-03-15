@@ -1,0 +1,57 @@
+.team-box {
+	padding: 70px 0px;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.our-team {
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.our-team .pic {
+	position: relative;
+	border: 3px solid #00cb86;
+	transition: all 0.5s ease 0s;
+}
+
+.team-content {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	transition: all 0.5s ease 0.2s;
+}
+
+.our-team:hover .team-content {
+	bottom: 0;
+	background-color: #00cb8777;
+	padding: 70px 0px;
+}
+
+/* blog */
+.blog-box {
+	padding: 70px 0;
+	width: 400px;
+}
+
+.blog-img {
+	overflow: hidden;
+}
+
+.blog-img img {
+	transition: all 0.9s ease 0s;
+}
+
+.blog-inner:hover .blog-img img {
+	-moz-transform: scale(1.5) rotate(-10deg);
+	-webkit-transform: scale(1.5) rotate(-10deg);
+	-ms-transform: scale(1.5) rotate(-10deg);
+	-o-transform: scale(1.5) rotate(-10deg);
+	transform: scale(1.5) rotate(-10deg);
+}
